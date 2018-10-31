@@ -1,0 +1,23 @@
+
+.foto
+	background-image: url('/pic/foto.jpeg')
+	background-size: cover
+	background-position: center
+	background-repeat: no-repeat;
+	width 500px
+	height 500px
+	position relative
+	border-top-right-radius: 50%
+	border-top-left-radius: 50%
+	box-shadow: inset 0px 0px 40px 30px rgba(0,0,0,0.9);
+	&::after
+		content: ''
+		position: absolute
+		top: -8px
+		bottom: -8px
+		left: -8px
+		right: -8px
+		border-top-right-radius: 50%
+		border-top-left-radius: 50%
+		background: linear-gradient(90deg, #6B642E 0%, #A34B19 50%, #674A14 100%)
+		z-index: -2

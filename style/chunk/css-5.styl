@@ -1,0 +1,66 @@
+.traffic 
+	display flex
+	flex-direction: column
+	justify-content space-around
+	align-items center
+	content: ""
+	width 70px
+	margin 0 auto
+	height 200px
+	border: 2px solid #000
+	background-color: #000
+	border-radius: 10px
+
+.red
+	width: 30px
+	height: 30px
+	border-radius: 50%
+	border: 2px solid grey
+	content: ""
+	display block
+	animation: traffic 2s backwards
+
+.yellow
+	width: 30px
+	height: 30px
+	border-radius: 50%
+	border: 2px solid grey
+	content: ""
+	display block
+	animation: traffic1 2s backwards 2s
+
+.green
+	width: 30px
+	height: 30px
+	border-radius: 50%
+	border: 2px solid grey
+	content: ""
+	display block
+	animation: traffic2 2s forwards 4s
+
+
+
+@keyframes traffic 
+	100%{background: red;}
+
+@keyframes traffic1 
+	100%{background: yellow;}
+
+@keyframes traffic2 
+	100%{background: green;}
+
+
+.car
+	background-image url('/pic/car.png')
+	background-repeat no-repeat
+	margin-top: 100px
+	background-size: cover
+	width 400px
+	height 200px
+	transform: translateX(2000px)
+	animation: drive 12s backwards 4s
+	
+	
+
+@keyframes drive
+	100%{transform: translateX(-2000px);}

@@ -1,0 +1,84 @@
+.chat
+	max-width 745px
+	margin 0 auto
+	margin-top 30px
+	&-wrapper
+		display flex
+		width 567px
+		margin-bottom 45px
+		justify-content space-between
+		&:nth-child(even)
+			margin-left auto
+
+.chat__user
+	display flex
+	order: 2
+	align-items center
+	&-title
+		margin 0
+		font-size: 14px
+	&-timer
+		display block
+		font-size: 12px
+	&-img
+		background-image url('/pic/ppl3.jpg')
+		background-repeat no-repeat
+		background-position center
+		border-radius: 100%
+		background-size: cover
+		width 70px
+		height 70px
+		&:nth-child(even)
+			margin-left 10px
+		&:nth-child(odd)
+			margin-right 10px
+
+
+.chat__field
+	width 390px
+	order 2
+	background-color: #38B2CE
+	position relative
+	&-text
+		font-size: 15px
+		padding-left 30px
+		padding-right 40px
+		padding-top 10px
+	&::before
+		position absolute
+		content: ""
+		display block
+		width 18px
+		height 18px
+		border: 2px solid #f3f3f3
+		border-radius: 100%
+		background-color: #fff
+		top 30px
+		left -10px
+	&::after
+		position absolute
+		content: ""
+		display block
+		width 18px
+		height 18px
+		border: 2px solid #f3f3f3
+		border-radius: 100%
+		background-color: #fff
+		top 30px
+		right -10px
+		
+.chat-wrapper .chat__field:nth-child(even)
+	background-color: #FFB273
+
+.chat__field:nth-child(even)::after
+	display none
+
+.chat__field:nth-child(odd)::before
+	display none
+
+.chat__user-wrap:nth-child(even)
+	text-align right
+
+
+
+

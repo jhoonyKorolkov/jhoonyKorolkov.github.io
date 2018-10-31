@@ -1,0 +1,31 @@
+
+img
+	display block
+
+
+.drop
+	background-image: url('/pic/ppl1.jpg')
+	background-size: cover
+	background-position: center
+	background-repeat: no-repeat
+	width 250px
+	height 250px
+	position relative
+	margin-right 20px
+	cursor pointer
+	transition: all .6s
+	box-shadow: 24px 7px 36px -4px rgba(0,0,0,0.75);
+	&:nth-child(even):active
+		transform: perspective(1000px) rotateY(-180deg)
+		transform-origin: bottom 
+	&:nth-child(odd):active
+		transform: perspective(1000px) rotateX(-90deg) translateY(50px)
+		transform-origin: bottom 
+
+
+.box
+	transform:perspective(1000px)
+	display flex
+
+p
+	display block

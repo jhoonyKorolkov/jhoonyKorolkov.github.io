@@ -1,0 +1,72 @@
+
+
+// * {
+//   border: 1px solid red;
+// }
+
+button:active,
+button:focus {
+  outline: none
+}
+
+::selection {
+  color: $color-hover
+    
+}
+
+a {
+  outline: none
+  text-decoration: none
+  color textcolor
+  align-self auto
+}
+
+a:hover {
+  text-decoration: none
+}
+
+
+
+body {
+	margin: 0
+	font-family: 'Montserrat'
+	outline: none
+	font-size: 18px
+	min-width: 320px
+	overflow-x: hidden
+	position: relative
+	color: #000
+
+
+	input,
+	textarea {
+		border: #666 1px solid
+		outline: none
+
+    &:focus:required:invalid {
+      border-color: $color-hover
+    }
+
+    &:required:valid {
+      border-color: green
+    }
+  }
+}
+
+img {
+  display: block
+  //width: 100%
+  height: auto
+}
+
+.visually-hidden {
+  position: absolute !important
+  clip: rect(1px 1px 1px 1px)
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px)
+  padding: 0 !important
+  border: 0 !important
+  height: 1px !important
+  width: 1px !important
+  overflow: hidden
+}
